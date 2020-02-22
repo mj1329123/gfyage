@@ -8,14 +8,14 @@ def index(request):
 def audios(request):
     # 雅歌音频
     audios = Audio.objects.filter().order_by('id')[0]
-    context = {'audio':audios}
-    return render(request, 'gfyage_app/audios.html',context)
+    context = {'audio': audios}
+    return render(request, 'gfyage_app/audios.html', context)
 
 def audio(request,audio_id):
     # 音频详细界面
     audio = Audio.objects.get(id=audio_id)
-    context = {'audio':audio}
-    return render(request,'gfyage_app/audio.html',context)
+    context = {'audio': audio}
+    return render(request, 'gfyage_app/audio.html',context)
 
 def video(request):
     # 演唱视频
