@@ -41,7 +41,8 @@ INSTALLED_APPS = [
     # 第三方应用
     'bootstrap3',
     # 国风雅歌
-    'gfyage_app',
+    # 'gfyage_app',
+    'gfyage_app.apps.GfyageAppConfig',
 ]
 
 MIDDLEWARE = [
