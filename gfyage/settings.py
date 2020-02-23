@@ -87,11 +87,11 @@ DATABASES = {
         # 'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
         # 注册我们自己使用的数据库连接
         'ENGINE': 'django.db.backends.mysql',  # 数据库引擎
-        'NAME': 'TEST', #数据库名称
-        'USER':'root', # 连接数据库的用户名称
-        'PASSWORD':'mj123456',  # 用户密码
-        'HOST':'127.0.0.1', # 访问的数据库的主机的ip地址
-        'PORT':'3306', # 默认mysql访问端口
+        'NAME': 'TEST',  #数据库名称
+        'USER': 'root',  # 连接数据库的用户名称
+        'PASSWORD': 'mj123456',  # 用户密码
+        'HOST': '127.0.0.1',  # 访问的数据库的主机的ip地址
+        'PORT': '3306',  # 默认mysql访问端口
     }
 }
 
@@ -115,7 +115,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # 静态资源文件
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 #
-MEDIA_ROOT = os.path.join(BASE_DIR,"static/media")
+MEDIA_ROOT = os.path.join(BASE_DIR, "static/media")
 # Internationalization
 # https://docs.djangoproject.com/en/2.2/topics/i18n/
 
