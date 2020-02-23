@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     # 国风雅歌
     # 'gfyage_app',
     'gfyage_app.apps.GfyageAppConfig',
+    'mdeditor',
 ]
 
 MIDDLEWARE = [
@@ -117,6 +118,7 @@ AUTH_PASSWORD_VALIDATORS = [
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 #
 MEDIA_ROOT = os.path.join(BASE_DIR, "static/media")
+MEDIA_URL = '/media/'
 # Internationalization
 # https://docs.djangoproject.com/en/2.2/topics/i18n/
 
