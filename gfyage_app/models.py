@@ -19,7 +19,7 @@ class Audio(models.Model):
     SingDate = models.CharField('演唱时间', max_length=20)  # 演唱时间
     Accompany = models.CharField('伴奏', max_length=20)  # 伴奏
     CoverImage = models.ImageField(upload_to='audio', verbose_name='图片', null=True)  # 封面图片
-    Lyrics = MDTextField('歌词')  # 歌词
+    Lyrics = models.TextField('歌词')  # 歌词
     SingerIntro = MDTextField('演唱者介绍')  # 演唱者介绍
     SongIntro = MDTextField('歌曲介绍')  # 歌曲介绍
     Tag = models.CharField('标签', max_length=20)  # 页面最后的一个标签
