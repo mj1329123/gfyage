@@ -119,9 +119,11 @@ MEDIA_ROOT = os.path.join(BASE_DIR,"static/media")
 # Internationalization
 # https://docs.djangoproject.com/en/2.2/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+# 把英文改为中文
+LANGUAGE_CODE = 'zh-hans'
 
-TIME_ZONE = 'UTC'
+# 把国际时区改为中国时区（东八区）
+TIME_ZONE = 'Asia/Shanghai'
 
 USE_I18N = True
 
